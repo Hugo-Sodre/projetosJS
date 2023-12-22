@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Consulta Cep</title>
 </head>
 <body>
-    <h2>Consulta de CEP</h2>
 
+    <div class="cabecalho">
+    <header>
+    <h2>Consulta de CEP</h2>
+    </header>   
+</div>
+
+<div class="form">
     <form id="cepForm">
         <label for="cep">CEP:</label>
-        <input type="text" id="cep" placeholder="Digite o CEP" required>
-        <button type="button" onclick="consultarCEP()">Consultar</button>
+        <input  class="input" type="text" id="cep" placeholder="Digite o CEP" required>
+        <button class="button"  type="button" onclick="consultarCEP()">Consultar</button>
     </form>
-
+</div>
     <div id="resultado"></div>
 
     <script src="script.js"></script>
