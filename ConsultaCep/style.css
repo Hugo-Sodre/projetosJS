@@ -1,12 +1,27 @@
-*{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2; /* Cor de fundo um pouco mais clara */
+    margin: 0;
 }
-.cabecalho h2{
+
+.cabecalho {
+    padding: 20px;
+    background-color: #2c3e50; /* Cor mais escura para o cabeçalho */
+    color: #ecf0f1; /* Cor do texto no cabeçalho */
+}
+
+.cabecalho h2 {
     text-align: center;
+    margin: 0;
+    font-size: 24px; /* Tamanho de fonte um pouco maior */
 }
-.cabecalho{
-    background-color: aqua;
-}
+
 .form {
     text-align: center;
 }
@@ -16,26 +31,43 @@
     flex-direction: column;
     align-items: center;
 }
+
 button {
-    padding: 10px 20px;
-    margin: 5px;
+    padding: 12px 24px; /* Aumentar o padding para um botão mais espaçado */
+    margin: 10px 0; /* Maior margem para um espaçamento mais limpo */
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: #27ae60; /* Cor mais intensa para o botão */
     color: white;
     font-size: 16px;
     cursor: pointer;
-    
+    transition: background-color 0.3s ease-in-out; /* Efeito de transição suave */
+
 }
+
 button:hover {
-    background-color: #45a049;
-  }
-.input{
-    padding: 10px;
-      margin: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-      width: 200px;
-      font-size: 14px;
+    background-color: #219d54; /* Cor mais escura ao passar o mouse */
+}
+
+.input {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #95a5a6; /* Cor mais suave para a borda */
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px; /* Tamanho de fonte ligeiramente maior */
+}
+
+/* Adicione uma regra de mídia para estilos específicos de tela menor ou igual a 600 pixels */
+@media only screen and (max-width: 600px) {
+    .cabecalho {
+        padding: 15px; /* Reduzir o padding para telas menores */
+    }
+    .cabecalho h2 {
+        font-size: 20px; /* Ajustar o tamanho da fonte para telas menores */
+    }
+    button {
+        padding: 10px 20px; /* Ajustar o padding do botão para telas menores */
+    }
 }
