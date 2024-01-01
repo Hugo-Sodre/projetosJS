@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmes Populares</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+  <h1>Filmes Populares</h1>
+
+  <!-- Input para pesquisa -->
+  <label for="searchInput">Buscar filme:</label>
+  <input type="text" id="searchInput" placeholder="Digite o nome do filme">
+  <button onclick="searchMovie()">Buscar</button>
+
+  <!-- Contêiner para exibir os filmes populares -->
+  <div id="moviesContainer"></div>
+
+  <!-- Adicione a biblioteca Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
