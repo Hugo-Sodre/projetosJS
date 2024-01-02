@@ -26,9 +26,9 @@ function displayMovies(movies) {
     movies.forEach(movie => {
         const movieElement = document.createElement('div');
         movieElement.innerHTML = `
-          <h2>${movie.title}</h2>
-          <img src="${IMG_PREFIX}${movie.poster_path}" alt="${movie.title}">
-          <p>${movie.overview}</p>
+          <h2 class="highlight-title">${movie.title}</h2>
+          <img class="movie-card" src="${IMG_PREFIX}${movie.poster_path}" alt="${movie.title}">
+          <p class="movie-card">${movie.overview}</p>
         `;
         moviesContainer.appendChild(movieElement);
     });

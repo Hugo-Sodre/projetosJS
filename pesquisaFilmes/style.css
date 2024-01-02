@@ -2,7 +2,53 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
 }
 .moviescontainer{
     padding: 20px;
+}
+
+.input{
+    padding: 20px;
+}
+
+.moviesct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Adicionado para centralizar verticalmente */
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.moviesct p {
+    color: white;
+    
+}
+.movie-card {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.movie-card h2 {
+    font-weight: bold;
+}
+.highlight-title {
+    font-weight: bold;
+    color: #3498db; /* Cor azul (pode ajustar conforme desejado) */
+    font-size: 1.5rem;
 }
