@@ -1,7 +1,7 @@
 
 const TMDB_ENDPOINT = 'https://api.themoviedb.org/3/movie/popular';
 const ACCESS_TOKEN = '056149073021f49912e8b9bffa76d259'; // Substitua pela sua chave de acesso
-const IMG_PREFIX = 'https://image.tmdb.org/t/p/w500';
+const IMG_PREFIX = 'https://image.tmdb.org/t/p/w300';
 
 // Função para buscar filmes populares
 function getPopularMovies() {
