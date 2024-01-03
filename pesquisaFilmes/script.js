@@ -50,6 +50,7 @@ function searchMovie() {
                 displayMovies(response.data.results);
             })
             .catch(error => {
+                window.alert('Erro ao buscar filme:', error.message)
                 console.error('Erro ao buscar filme:', error.message);
             });
     } else {

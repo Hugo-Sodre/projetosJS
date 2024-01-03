@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: black;
+}
+
+#quebra-cabeca{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.conjunto{
+    width: 810px;
+    height: 810px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.quadrado{
+    width: 230px;
+    height: 230px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(191,191,191,0.3);
+    cursor: pointer;
+    text-align: center;
+    
+    font-family: sans-serif;
+}
+
+.quadrado span{
+    font-size: 2em;
+    color: black;
+    text-shadow: 1px 1px 2px white;
+}
+
+.quadrado:hover{
+    opacity: 0.8;
+}
+
+/*Apagar*/
+
+#q1{
+    background-image: radial-gradient(#FF0000,#740000);
+}
+
+#q2{
+    background-image: radial-gradient(#FFFF00,	rgb(155, 118, 24));
+}
+
+#q3{
+    background-image: radial-gradient(#00FF00,	#2da862);
+}
+
+#q4{
+    background-image: radial-gradient(#0000FF,	#121250);
+}
+#q5{
+    background-image: radial-gradient(#ff00dd,	#121250);
+}
+#q6{
+    background-image: radial-gradient(#ff0040,	#121250);
+}

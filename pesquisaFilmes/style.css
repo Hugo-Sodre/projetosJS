@@ -78,3 +78,31 @@ body {
 }
 
 
+.card {
+    background-color: #000;
+    color: #fff; /* Cor do texto */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  /* Estilo para a imagem no card */
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+
+  /* Estilo para o título no card */
+  .card h2 {
+    color: #fff; /* Cor do título */
+  }
+
+  /* Estilo para o parágrafo no card */
+  .card p {
+    color: #ccc; /* Cor do texto do parágrafo */
+  }
