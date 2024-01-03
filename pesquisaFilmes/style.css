@@ -4,37 +4,39 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background-color: black;
 }
-.moviescontainer{
+
+.moviescontainer {
     padding: 20px;
 }
 
-.input{
+.input {
     padding: 20px;
 }
 
 .moviesct {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Adicionado para centralizar verticalmente */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 20px;
     padding: 10px;
     text-align: center;
 }
+
 .moviesct p {
     color: white;
-    
 }
+
 .movie-card {
     width: 300px;
     margin: 10px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin: 10px auto;
 }
 
 .movie-card img {
@@ -44,11 +46,35 @@ body{
     margin-bottom: 10px;
 }
 
+.movie-description {
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    color: #fff;
+}
+
+.movie-description h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.movie-description p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
 .movie-card h2 {
     font-weight: bold;
 }
+
 .highlight-title {
     font-weight: bold;
-    color: #3498db; /* Cor azul (pode ajustar conforme desejado) */
+    color: #3498db;
     font-size: 1.5rem;
 }
+
+

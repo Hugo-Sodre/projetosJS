@@ -28,7 +28,7 @@ function displayMovies(movies) {
         movieElement.innerHTML = `
           <h2 class="highlight-title">${movie.title}</h2>
           <img class="movie-card" src="${IMG_PREFIX}${movie.poster_path}" alt="${movie.title}">
-          <p class="movie-card">${movie.overview}</p>
+          <p class="movie-description">${movie.overview}</p>
         `;
         moviesContainer.appendChild(movieElement);
     });
